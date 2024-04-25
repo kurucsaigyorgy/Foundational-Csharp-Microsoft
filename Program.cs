@@ -67,31 +67,72 @@ Console.WriteLine(largerValue);
 
 // Complete a challenge activity to apply business rules
 
-Random random = new Random();
-int daysUntilExpiration = random.Next(12);
-int discountPercentage = 0;
+//Random random = new Random();
+//int daysUntilExpiration = random.Next(12);
+//int discountPercentage = 0;
 
-if (daysUntilExpiration == 0)
-{
-    Console.WriteLine("Your subscription has expired.");
-} 
-else if (daysUntilExpiration == 1)
-{
-    discountPercentage = 20;
-    Console.WriteLine($"Your subscription expires within a day!");
-} 
-else if (daysUntilExpiration <= 5)
-{
-    discountPercentage = 10;
-    Console.WriteLine($"Your subscription expires in {daysUntilExpiration} days.");
-}
-else if (daysUntilExpiration <= 10)
-{
-    Console.WriteLine("Your subscription expires soon. Renew now!");
-}
+//if (daysUntilExpiration == 0)
+//{
+//    Console.WriteLine("Your subscription has expired.");
+//} 
+//else if (daysUntilExpiration == 1)
+//{
+//    Console.WriteLine($"Your subscription expires within a day!");
+//    discountPercentage = 20;
+//} 
+//else if (daysUntilExpiration <= 5)
+//{
+//    Console.WriteLine($"Your subscription expires in {daysUntilExpiration} days.");
+//    discountPercentage = 10;
+//}
+//else if (daysUntilExpiration <= 10)
+//{
+//    Console.WriteLine("Your subscription expires soon. Renew now!");
+//}
 
-if (discountPercentage > 0)
-{
-    Console.WriteLine($"Renew now and save {discountPercentage}%!");
-}
+//if (discountPercentage > 0)
+//{
+//    Console.WriteLine($"Renew now and save {discountPercentage}%!");
+//}
 
+//--------------------------------------------------------------------------
+//--------------------------------------------------------------------------
+// Store and iterate through sequences of data using Arrays and the foreach statement in C#
+
+//string[] orderIDs = new string[3];
+//orderIDs[0] = "A123";
+//orderIDs[1] = "B456";
+//orderIDs[2] = "C789";
+//orderIDs[3] = "D000";
+
+//string[] orderIDs = ["A123", "B456", "C789"];
+
+//Console.WriteLine($"First: {orderIDs[0]}");
+//Console.WriteLine($"Second: {orderIDs[1]}");
+//Console.WriteLine($"Third: {orderIDs[2]}");
+
+//orderIDs[0] = "F000";
+
+//Console.WriteLine($"Reassign first: {orderIDs[0]}");
+
+//Console.WriteLine($"There are {orderIDs.Length} fraudulent orders to process.");
+
+//string[] names = ["Rowena", "Robin", "Bao"];
+//foreach (var name in names)
+//{
+//    Console.WriteLine(name);
+//}
+
+
+//--------------------------------------------------------------------------
+//--------------------------------------------------------------------------
+//Complete a challenge activity for nested iteration and selection statements
+
+string[] orderIDs = ["B123", "C234", "A345", "C15", "B177", "G3003", "C235", "B179"];
+foreach (var orderID in orderIDs)
+{
+    if (orderID.StartsWith("B"))
+    {
+        Console.WriteLine(orderID);
+    }
+}

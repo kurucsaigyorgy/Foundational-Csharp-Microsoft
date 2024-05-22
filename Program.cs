@@ -267,7 +267,7 @@ Console.WriteLine($"'o' appears {letterCount} times.");
 //--------------------------------------------------------------------------
 // Guided project - Develop foreach and if-elseif-else structures to process array data in C#
 
-using System;
+/*using System;
 using System.Runtime.CompilerServices;
 
 // initialize variables - graded assignments 
@@ -365,4 +365,88 @@ foreach (string name in studentNames)
 }
 
 Console.WriteLine("Press the Enter key to continue");
-Console.ReadLine();
+Console.ReadLine();*/
+
+//--------------------------------------------------------------------------
+// Add logic to C# console applications (Get started with C#, Part 3)
+//--------------------------------------------------------------------------
+
+/*Console.WriteLine("a" == "a ");
+Console.WriteLine("a" == "A");
+Console.WriteLine(1 == 2);
+
+string myValue = "a";
+Console.WriteLine(myValue == "a");
+
+string value1 = "a ";
+string value2 = " A";
+Console.WriteLine(value1.Trim().ToLower() == value2.Trim().ToLower());
+*/
+
+//Console.WriteLine("a" != "a");
+//Console.WriteLine("a" != "A");
+//Console.WriteLine(1 != 2);
+
+//string myValue = "a";
+//Console.WriteLine(myValue != "a");
+
+//Console.WriteLine(1 > 2);
+//Console.WriteLine(1 < 2);
+//Console.WriteLine(1 >= 1);
+//Console.WriteLine(1 <= 1);
+
+//string pangram = "The quick brown fox jumps over the lazy dog.";
+//Console.WriteLine(pangram.Contains("fox"));
+//Console.WriteLine(pangram.Contains("cow"));
+
+//string pangram = "The quick brown fox jumps over the lazy dog.";
+//Console.WriteLine(!pangram.Contains("fox"));
+//Console.WriteLine(!pangram.Contains("cow"));
+
+//decimal purchaseValue = 100;
+//int discount = purchaseValue >=1000 ? 100 : 50;
+
+//Console.WriteLine($"Your are eligible for a {(purchaseValue >= 1000 ? 100 : 50)}$ dicount");
+
+//--------------------------------------------------------------------------
+// Code challenge: write code to display the result of a coin flip
+/*Random random = new Random();
+int headsOrTails = random.Next(1, 3);
+string result = headsOrTails < 2 ? "heads" : "tails";
+Console.WriteLine(result);*/
+
+//Random coin = new Random();
+//int flip = coin.Next(0, 2);
+//Console.WriteLine((flip == 0) ? "heads" : "tails");
+
+//--------------------------------------------------------------------------
+// Decision logic challenge
+
+string permission = "Admin|Manager";
+int level = 55;
+
+string output;
+
+if (permission.Contains("Admin") && level > 55)
+{
+    output = "Welcome, Super Admin user.";
+} 
+else if (permission.Contains("Admin") && level <= 55)
+{
+    output = "Welcome, Admin user";
+} 
+else if (permission.Contains("Manager") && level >= 20)
+{
+    output = "Contact an admin for access.";
+} 
+else
+{
+    output = "You do not have sufficient priviliges.";
+}
+Console.WriteLine(output);
+
+
+
+
+
+
